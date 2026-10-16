@@ -1,0 +1,6 @@
+{
+  "name": "ELIXON-GI",
+  "description": "منصة الذكاء الاصطناعي الفائقة المدعومة بنماذج Gemini و DeepSeek للتعلّم والتحليل المعرفي والبرمجي المتطور",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
