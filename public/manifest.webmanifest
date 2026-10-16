@@ -1,0 +1,85 @@
+{
+  "id": "/",
+  "name": "ELIXON-GI AI Platform",
+  "short_name": "ELIXON-GI",
+  "description": "منصة الذكاء الاصطناعي الفائقة المدعومة بنماذج Gemini و DeepSeek للتعلّم والتحليل المعرفي والبرمجي المتطور",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "portrait",
+  "background_color": "#090d16",
+  "theme_color": "#090d16",
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": ["productivity", "utilities", "developer"],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "واجهة سطح المكتب - منصة ELIXON-GI"
+    },
+    {
+      "src": "/screenshot-narrow.png",
+      "sizes": "720x1280",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "واجهة الهاتف المحمول - منصة ELIXON-GI"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "محادثة جديدة",
+      "short_name": "جديد",
+      "description": "بدء جلسة حوار ذكية جديدة",
+      "url": "/?tab=chat",
+      "icons": [
+        {
+          "src": "/pwa-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "مقارنة النماذج",
+      "short_name": "مقارنة",
+      "description": "مقارنة مخرجات Gemini و DeepSeek جنباً إلى جنب",
+      "url": "/?tab=compare",
+      "icons": [
+        {
+          "src": "/pwa-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
