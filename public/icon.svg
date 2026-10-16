@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="geminiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <linearGradient id="deepseekGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background with rounded corners -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="url(#accentGlow)" stroke-width="3" stroke-opacity="0.35" />
+
+  <!-- Outer Neural Ring -->
+  <circle cx="256" cy="256" r="168" fill="none" stroke="url(#geminiGrad)" stroke-width="6" stroke-dasharray="16 12" opacity="0.45" />
+  <circle cx="256" cy="256" r="140" fill="none" stroke="url(#deepseekGrad)" stroke-width="4" stroke-opacity="0.6" />
+
+  <!-- Glowing Core Aura -->
+  <circle cx="256" cy="256" r="100" fill="url(#accentGlow)" opacity="0.18" filter="url(#glow)" />
+
+  <!-- Synergy Dual-Star / Diamond Centerpiece -->
+  <g transform="translate(256, 256)">
+    <!-- Rotating Dual Petals (Gemini + DeepSeek) -->
+    <path d="M 0 -105 C 28 -45, 45 -28, 105 0 C 45 28, 28 45, 0 105 C -28 45, -45 28, -105 0 C -45 -28, -28 -45, 0 -105 Z" fill="url(#geminiGrad)" filter="url(#glow)" />
+    <path d="M 0 -85 C 22 -35, 35 -22, 85 0 C 35 22, 22 35, 0 85 C -22 35, -35 22, -85 0 C -35 -22, -22 -35, 0 -85 Z" fill="#0f172a" />
+    
+    <!-- Central Synergy Core -->
+    <circle cx="0" cy="0" r="26" fill="url(#deepseekGrad)" />
+    <circle cx="0" cy="0" r="14" fill="#ffffff" />
+    
+    <!-- Orbiting nodes -->
+    <circle cx="-55" cy="-55" r="7" fill="#38bdf8" />
+    <circle cx="55" cy="-55" r="7" fill="#10b981" />
+    <circle cx="55" cy="55" r="7" fill="#c084fc" />
+    <circle cx="-55" cy="55" r="7" fill="#06b6d4" />
+  </g>
+
+  <!-- Brand Typography -->
+  <text x="256" y="440" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="900" fill="#ffffff" letter-spacing="4" text-anchor="middle">ELIXON-GI</text>
+  <text x="256" y="468" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#38bdf8" letter-spacing="2" text-anchor="middle">GEMINI × DEEPSEEK</text>
+</svg>
